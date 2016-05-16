@@ -63,5 +63,5 @@ link_directories( ${FAIRROOT_LIBRARY_DIR}
 
 
 #---Create a shared library with geneated dictionary
-add_library(EventLoop SHARED src/EventLoop.cc src/MPILooper.cc)
+add_library(EventLoop SHARED src/MPILooper.cc)
 target_link_libraries(EventLoop ${MPI_LIBRARIES}) 
