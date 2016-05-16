@@ -1,6 +1,6 @@
 #!/bin/sh
 ### name of job
-#PBS -N mpilooper
+#PBS -N MPIEventLoop
 ### email on _a_bort, _b_egin, _e_nd
 #PBS -m abe
 ### combine stdout/stderr
@@ -15,4 +15,4 @@
 #PBS -l nodes=50
 #export GMON_OUT_PREFIX='gmon.out-'`/bin/uname -n`
 cd ${PBS_O_WORKDIR}
-time mpiexec ./bin/mpilooper
+time mpiexec ./bin/example
